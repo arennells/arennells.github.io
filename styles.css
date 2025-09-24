@@ -1,0 +1,189 @@
+/* Logo/Name */
+.logo {
+    text-align: center;
+    font-weight: bold; 
+    font-size: 20px;
+    padding: 25px;
+}
+
+/* Navigation bar */
+nav {
+    background-color: rgb(62, 114, 147);
+    padding: 15px 30px;
+    align-content: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;  
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  display: block;
+}
+
+nav ul li a:hover, 
+nav ul li a.active {
+  color: black;
+  text-decoration: underline;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgb(62, 114, 147);
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.dropdown-content a:hover,
+.dropdown-content a.active{
+    color: black;
+    text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Body */
+.body{
+    padding: 50px 10%;
+    background: #f1f1f1;
+    color: #333;
+}
+
+.body-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.body h1{
+    text-align: center;
+    color: rgb(62, 114, 147);
+    margin-bottom: 30px;
+}
+
+/* Text Format */
+.text-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+.text-box:hover{
+    box-shadow: 0px 4px 50px rgba(0,0,0,0.2);
+}
+
+/* Text */
+.text-box h1 {
+  text-align: center;
+  color: rgb(62, 114, 147);
+  margin-bottom: 30px;
+}
+
+.text-box h2 {
+  text-align: left;
+  margin-bottom: 10px;
+  color: rgb(62, 114, 147);
+}
+
+.text-box p, .home-box li {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.text-box h3 {
+  margin-top: 30px;
+  color: rgb(62, 114, 147);
+}
+
+/* sProject Boxes */
+.text-box-button a {
+  display: inline-block;
+  margin-top: 10px;
+  color: white;
+  background-color: rgb(62, 114, 147);
+  padding: 8px 14px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.text-box-button a:hover {
+  background-color: rgb(45, 85, 110);
+}
+
+/* Index Layout */
+.circlePic{
+    width: 200px;
+    height: 200px;
+    float: left;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #3E7293;
+    margin: 0 50px 5px 0; 
+    padding: 10px;
+}
+
+.resume-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px
+}
+
+.header-text h1,
+.header-text h2 {
+    text-align: left;
+    margin: 0;
+}
+
+.header-text p{
+    margin: 5px 0;
+}
+
+.resume-body{
+    clear: both;
+}
+
+/* Projects */
+.sProject .text-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.sProject .text-content{
+    flex: 1;
+}
+
+.sProject .image-content img{
+    width: 300px;
+    height: auto;
+    border: 3px solid #3E7293;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+
